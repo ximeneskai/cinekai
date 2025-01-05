@@ -1,20 +1,45 @@
 .container {
     margin: 1.5em;
-    width: 330px;
-    height: 540px;
+    width: 350px;
+    height: 650px;
     max-width: 400px;
-    max-height: 600px;
-    border: 3px solid #2271D1; /* Cor de borda inicial */
+    max-height: 700px;
+    border: 3px solid #2271D1; /* Cor da borda */
     border-radius: 15px;
-    overflow: hidden;
-    background-color: #121212;
+    overflow: auto;
+    background-color: #121212; /* Fundo escuro */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: white black; /* Cores para Firefox */
 }
 
 .container:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.descricao {
+    max-height: 100px; /* Defina o limite de altura */
+    overflow: auto; /* Habilita a rolagem se o texto exceder o limite */
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: white black; /* Cores para Firefox */
+}
+
+.descricao::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.descricao::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+
+.descricao::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 .link {
@@ -31,6 +56,7 @@
 }
 
 span {
+    margin-bottom: 10px;
     padding: 0.4em;
     border-radius: 10px;
     font-weight: 400;
@@ -39,7 +65,7 @@ span {
 }
 
 h2 {
-    margin: 2px;
+    margin-top: 15px;
     font-size: 1.2rem;
     text-align: center;
     font-family: 'Source Sans 3', sans-serif;
@@ -47,62 +73,8 @@ h2 {
     color: #ffffff;
 }
 
-.buttons {
-    display: flex;
-    margin: auto;
-    gap: 1em;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-}
-
-.btnDelete {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: 600;
-    font-size: 0.9rem;
+p {
     color: white;
-    padding: 8px 12px;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.btnDelete:hover {
-    background-color: #9e3623;
-    border-color: white;
-    color: white;
-}
-
-.btnEdit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: white;
-    padding: 8px 12px;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.btnEdit:hover {
-    background-color: #2271D1;
-    border-color: white;
-    color: white;
-}
-
-.icon {
-    margin-right: 5px;
-    width: 15px;
+    margin: 15px;
+    text-align: left;
 }

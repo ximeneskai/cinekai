@@ -14,9 +14,6 @@ function Header() {
                     <HeaderLink url="/">
                         HOME
                     </HeaderLink>
-                    <HeaderLink url="/newvideo">
-                        NOVO VÍDEO
-                    </HeaderLink>
                     <HeaderLink url="/contact">
                         CONTATO
                     </HeaderLink>
