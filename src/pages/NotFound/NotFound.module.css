@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.container h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.container img {
+    width: 700px;
+    margin: 10px;
+}
+
+.container h2 {
+    margin-bottom: 50px;
+    color: white;
+
+}
+
+.container h4 {
+    margin-bottom: 50px;
+    color: white;
+    
+}

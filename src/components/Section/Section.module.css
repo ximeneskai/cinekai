@@ -1,0 +1,12 @@
+.container {
+    background-color: #262626; /* Fallback */
+    margin: 3em;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.carrossel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em;
+}

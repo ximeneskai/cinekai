@@ -1,0 +1,10 @@
+.title {
+    margin: 80px 5px 5px 25px;
+    font-size: 32px;
+    color: #F5F5F5;
+    max-width: 400px;
+    height: 65px;
+    border-radius: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}

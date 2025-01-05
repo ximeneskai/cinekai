@@ -1,0 +1,108 @@
+.container {
+    margin: 1.5em;
+    width: 330px;
+    height: 540px;
+    max-width: 400px;
+    max-height: 600px;
+    border: 3px solid #2271D1; /* Cor de borda inicial */
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #121212;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+
+.capa {
+    width: 100%;
+    max-height: 400px;
+    object-fit: inherit;
+}
+
+span {
+    padding: 0.4em;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: white;
+}
+
+h2 {
+    margin: 2px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.buttons {
+    display: flex;
+    margin: auto;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.btnDelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btnDelete:hover {
+    background-color: #9e3623;
+    border-color: white;
+    color: white;
+}
+
+.btnEdit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btnEdit:hover {
+    background-color: #2271D1;
+    border-color: white;
+    color: white;
+}
+
+.icon {
+    margin-right: 5px;
+    width: 15px;
+}
